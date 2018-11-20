@@ -1,5 +1,19 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
+  <div class="container">
+    <router-link :to="'/work'">
+      <h1>ABOUT</h1>
+    </router-link>
   </div>
 </template>
+
+<script>
+export default {
+}
+</script>
+
+<style lang="sass" scoped>
+
+.container
+  background: #0f1149
+  color: white
+</style>

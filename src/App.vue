@@ -1,31 +1,43 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+    <transition mode="out-in">
+      <router-view/>
+    </transition>
   </div>
 </template>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-#nav {
-  padding: 30px;
-}
+<style lang="sass">
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
+a, a:active, a:visited
+  text-decoration: none
+  color: inherit
 
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
+ul
+  list-style: none
+
+body, html
+ font-family: sans-serif
+ background: #1f1f1f
+
+#app
+  height: 100vh
+  overflow: hidden
+
+.container
+  height: 100%
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+
+.v-enter-active, .v-leave-active
+  transition: transform .5s
+.v-enter
+  transform: translateY(100%)
+.v-leave-to
+  transform: translateY(-100%)
 </style>
