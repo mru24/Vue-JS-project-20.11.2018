@@ -1,7 +1,7 @@
 <template>
 
   <div class="container">
-    <router-link :to="'/'">
+    <router-link :to="'/contact'">
       <h1>MY WORK</h1>
     </router-link>
     <!-- <input type="text" v-model="query"> -->
@@ -85,6 +85,8 @@ export default {
     &:hover
       background: #cd5c00
       box-shadow: 0 0 15px #444
+    &:focus
+      background: green
 
 .content
   width: 80%
@@ -96,9 +98,11 @@ export default {
     flex-wrap: wrap
     justify-content: center
     .box
-      $width: 160px
+      $width: 12vw
       width: $width
-      height: $width + 40
+      min-width: 150px
+      height: $width + 2
+      min-height: 170px
       margin: 5px
       padding: 4px
       background: #eee

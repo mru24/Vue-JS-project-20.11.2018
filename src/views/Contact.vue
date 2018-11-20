@@ -1,28 +1,19 @@
 <template>
   <div class="container">
-    <router-link :to="'/about'">
-      <h1>hi</h1>
-      <h3>my name is Val</h3>
+    <router-link :to="'/'">
+      <h1>contact</h1>
     </router-link>
   </div>
 </template>
 
 <script>
-
 export default {
-  data () {
-    return {
-
-    }
-  }
 }
 </script>
 
 <style lang="sass" scoped>
-h1
-  font-size: 80px
-.container
-  background: #4b4b4b
-  color: white
 
+.container
+  background: #8b8423
+  color: white
 </style>

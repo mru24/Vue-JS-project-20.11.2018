@@ -22,9 +22,16 @@ ul
 body, html
  font-family: sans-serif
  background: #1f1f1f
+ height: 100%
+ // height: 100vh
+
+h1
+  text-transform: uppercase
+  font-size: 50px
 
 #app
-  height: 100vh
+  // height: 100vh
+  height: 100%
   overflow: hidden
 
 .container
@@ -40,4 +47,5 @@ body, html
   transform: translateY(100%)
 .v-leave-to
   transform: translateY(-100%)
+
 </style>
